@@ -21,6 +21,9 @@
 		0A281AD6294677A1004A8D88 /* LoadingSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A281AD5294677A1004A8D88 /* LoadingSymbol.swift */; };
 		0A281AD829467804004A8D88 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A281AD729467804004A8D88 /* Main.swift */; };
 		0A281ADA2946A152004A8D88 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A281AD92946A152004A8D88 /* Onboarding.swift */; };
+		0A42147829493B2800B7B920 /* GoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42147729493B2800B7B920 /* GoalList.swift */; };
+		0A42147A29493B6C00B7B920 /* AssistantLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42147929493B6C00B7B920 /* AssistantLink.swift */; };
+		0A42147D29493C9800B7B920 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42147C29493C9800B7B920 /* Goal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		0A281AD5294677A1004A8D88 /* LoadingSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSymbol.swift; sourceTree = "<group>"; };
 		0A281AD729467804004A8D88 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		0A281AD92946A152004A8D88 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		0A42147729493B2800B7B920 /* GoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalList.swift; sourceTree = "<group>"; };
+		0A42147929493B6C00B7B920 /* AssistantLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantLink.swift; sourceTree = "<group>"; };
+		0A42147C29493C9800B7B920 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,15 +114,15 @@
 		0A281AA22945EE69004A8D88 /* Resolutionary */ = {
 			isa = PBXGroup;
 			children = (
+				0A281AD129467760004A8D88 /* APIKey.swift */,
 				0A281AA32945EE69004A8D88 /* ResolutionaryApp.swift */,
 				0A281AA52945EE69004A8D88 /* ContentView.swift */,
 				0A281AD729467804004A8D88 /* Main.swift */,
+				0A42147B29493C5200B7B920 /* Main Items */,
 				0A281AD92946A152004A8D88 /* Onboarding.swift */,
 				0A281ACF29467734004A8D88 /* Assistant.swift */,
-				0A281AD129467760004A8D88 /* APIKey.swift */,
 				0A281AD329467784004A8D88 /* Buttons.swift */,
 				0A281AD5294677A1004A8D88 /* LoadingSymbol.swift */,
-				0A281ACD2945F30A004A8D88 /* ProgressBar.swift */,
 				0A281AA72945EE6C004A8D88 /* Assets.xcassets */,
 				0A281AA92945EE6C004A8D88 /* Preview Content */,
 			);
@@ -146,6 +152,17 @@
 				0A281AC02945EE6C004A8D88 /* ResolutionaryUITestsLaunchTests.swift */,
 			);
 			path = ResolutionaryUITests;
+			sourceTree = "<group>";
+		};
+		0A42147B29493C5200B7B920 /* Main Items */ = {
+			isa = PBXGroup;
+			children = (
+				0A281ACD2945F30A004A8D88 /* ProgressBar.swift */,
+				0A42147729493B2800B7B920 /* GoalList.swift */,
+				0A42147C29493C9800B7B920 /* Goal.swift */,
+				0A42147929493B6C00B7B920 /* AssistantLink.swift */,
+			);
+			path = "Main Items";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,15 +295,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A42147829493B2800B7B920 /* GoalList.swift in Sources */,
 				0A281ADA2946A152004A8D88 /* Onboarding.swift in Sources */,
 				0A281AD6294677A1004A8D88 /* LoadingSymbol.swift in Sources */,
 				0A281AD029467734004A8D88 /* Assistant.swift in Sources */,
+				0A42147D29493C9800B7B920 /* Goal.swift in Sources */,
 				0A281AD829467804004A8D88 /* Main.swift in Sources */,
 				0A281AA62945EE69004A8D88 /* ContentView.swift in Sources */,
 				0A281ACE2945F30B004A8D88 /* ProgressBar.swift in Sources */,
 				0A281AD429467784004A8D88 /* Buttons.swift in Sources */,
 				0A281AA42945EE69004A8D88 /* ResolutionaryApp.swift in Sources */,
 				0A281AD229467760004A8D88 /* APIKey.swift in Sources */,
+				0A42147A29493B6C00B7B920 /* AssistantLink.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

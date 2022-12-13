@@ -34,6 +34,11 @@ struct ProgressBar: View {
             })
             .cornerRadius(15)
         }
+        .padding()
+        .background(.regularMaterial)
+        .cornerRadius(15)
+        .padding(.horizontal)
+        .padding(.top)
     }
 }
 
