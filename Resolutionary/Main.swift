@@ -42,13 +42,7 @@ struct Main: View {
                         .cornerRadius(15)
                         .padding(.horizontal)
                         .padding(.top)
-                    VStack(alignment: .leading) {
-                        HStack {
-                            Text("Your Goals:")
-                                .bold()
-                            //.foregroundColor(.white)
-                            Spacer()
-                        }
+                    GroupBox("Your Goals:", content: {
                         List(selection: resolutions.indices, content: { index in
                             HStack {
                                 TextField("Goal \(index + 1)", text: $resolutions[index])
@@ -73,7 +67,8 @@ struct Main: View {
                                     } .tint(.red)
                                 }
                             }
-                        })
+                        }) .edgesIgnoringSafeArea(.all)
+                    })
                         HStack {
                             Spacer()
                             Button {
@@ -91,10 +86,6 @@ struct Main: View {
                             Spacer()
                         }
                     }
-                    .padding()
-                    .background(.regularMaterial)
-                    .cornerRadius(15)
-                    .padding()
                     NavigationLink(destination: {
                         Assistant(resolutions: $resolutions)
                     }, label: {
@@ -117,7 +108,6 @@ struct Main: View {
                         .multilineTextAlignment(.center)
                 } .navigationTitle("Your Resolutions")
             }
-        }
         .onAppear(perform: {
             selectedInspirational = inspirationals.randomElement()!
             UITextView.appearance().backgroundColor = .clear
