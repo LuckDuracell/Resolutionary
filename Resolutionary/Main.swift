@@ -26,7 +26,7 @@ struct Main: View {
     var body: some View {
         NavigationView {
             ZStack {
-                VStack {
+                ScrollView {
                     ProgressBar()
                     GoalList(resolutions: $resolutions, completed: $completed)
                     AssistantLink(resolutions: $resolutions)

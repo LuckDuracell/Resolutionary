@@ -23,7 +23,6 @@
 		0A281ADA2946A152004A8D88 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A281AD92946A152004A8D88 /* Onboarding.swift */; };
 		0A42147829493B2800B7B920 /* GoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42147729493B2800B7B920 /* GoalList.swift */; };
 		0A42147A29493B6C00B7B920 /* AssistantLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42147929493B6C00B7B920 /* AssistantLink.swift */; };
-		0A42147D29493C9800B7B920 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42147C29493C9800B7B920 /* Goal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +62,6 @@
 		0A281AD92946A152004A8D88 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		0A42147729493B2800B7B920 /* GoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalList.swift; sourceTree = "<group>"; };
 		0A42147929493B6C00B7B920 /* AssistantLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantLink.swift; sourceTree = "<group>"; };
-		0A42147C29493C9800B7B920 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +157,6 @@
 			children = (
 				0A281ACD2945F30A004A8D88 /* ProgressBar.swift */,
 				0A42147729493B2800B7B920 /* GoalList.swift */,
-				0A42147C29493C9800B7B920 /* Goal.swift */,
 				0A42147929493B6C00B7B920 /* AssistantLink.swift */,
 			);
 			path = "Main Items";
@@ -299,7 +296,6 @@
 				0A281ADA2946A152004A8D88 /* Onboarding.swift in Sources */,
 				0A281AD6294677A1004A8D88 /* LoadingSymbol.swift in Sources */,
 				0A281AD029467734004A8D88 /* Assistant.swift in Sources */,
-				0A42147D29493C9800B7B920 /* Goal.swift in Sources */,
 				0A281AD829467804004A8D88 /* Main.swift in Sources */,
 				0A281AA62945EE69004A8D88 /* ContentView.swift in Sources */,
 				0A281ACE2945F30B004A8D88 /* ProgressBar.swift in Sources */,
@@ -471,8 +467,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -501,8 +496,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

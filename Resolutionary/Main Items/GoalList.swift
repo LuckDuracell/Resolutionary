@@ -21,9 +21,11 @@ struct GoalList: View {
         UserDefaults.standard.set(completed, forKey: "completed")
     }
     
-    let screenWidth = UIScreen.main.bounds.width * 0.95
+    let screenWidth = UIScreen.main.bounds.width
     
     @State var rowHeight: CGFloat = 45
+    
+    @FocusState var focused: Bool
     
     var body: some View {
         VStack {
@@ -33,7 +35,6 @@ struct GoalList: View {
                     .padding(.leading, 5)
                 Spacer()
             }
-            //Divider()
             List(resolutions.indices, id: \.self, rowContent: { index in
                 GeometryReader { (geometry) in
                     HStack {
@@ -41,6 +42,9 @@ struct GoalList: View {
                             .onChange(of: resolutions[index], perform: { _ in
                                 UserDefaults.standard.set(resolutions, forKey: "resolutions")
                             })
+                            .focused($focused)
+                            .frame(width: screenWidth * 0.7)
+                        Spacer()
                         Button {
                             if completed[index] == "1" { completed[index] = "0" } else { completed[index] = "1" }
                         } label: {
@@ -50,8 +54,8 @@ struct GoalList: View {
                         .onChange(of: completed[index], perform: { _ in
                             UserDefaults.standard.set(completed, forKey: "completed")
                         })
-                        .padding(.top, 3)
-                    }
+                    } .padding(.top, 6)
+                    .listRowBackground(Color.clear)
                     .swipeActions(edge: .trailing, allowsFullSwipe: false) {
                         Button {
                             deleteRes(index)
@@ -59,18 +63,19 @@ struct GoalList: View {
                             Text("Delete")
                         } .tint(.red)
                     }
-                    .listRowBackground(Color.clear)
                     .onAppear(perform: {
                         withAnimation {
                             rowHeight = geometry.size.height
                         }
                     })
                 }
-            }) .scrollContentBackground(.hidden)
-                .frame(width: screenWidth, height: rowHeight * CGFloat(resolutions.count) + 130, alignment: .center)
-                .edgesIgnoringSafeArea(.all)
-                .padding(.horizontal, -100)
-                .padding(.vertical, -40)
+            })
+            .scrollDisabled(true)
+            .scrollContentBackground(.hidden)
+            .frame(width: screenWidth * 0.95, height: rowHeight * CGFloat(resolutions.count) + 75, alignment: .center)
+            .edgesIgnoringSafeArea(.all)
+            .padding(.horizontal, -100)
+            .padding(.top, -30)
             Divider()
             HStack(alignment: .center) {
                 Button {
@@ -90,6 +95,14 @@ struct GoalList: View {
             .background(.regularMaterial)
             .cornerRadius(15)
             .padding()
+            .toolbar(content: { ToolbarItem(placement: .keyboard, content: {
+                Button {
+                    focused.toggle()
+                } label: {
+                    Text("Done")
+                } .frame(width: screenWidth * 0.9, alignment: .trailing)
+                })
+            })
     }
 }
 

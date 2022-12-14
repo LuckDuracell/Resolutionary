@@ -12,7 +12,7 @@ struct ResolutionaryApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .colorScheme(.dark)
+                //.colorScheme(.dark)
         }
     }
 }
