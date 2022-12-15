@@ -27,7 +27,7 @@ struct AssistantLink: View {
             } .padding()
                 .background(.regularMaterial)
                 .cornerRadius(15)
-        }) .padding()
+        }) .padding(.horizontal)
     }
 }
 
