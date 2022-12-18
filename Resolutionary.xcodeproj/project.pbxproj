@@ -23,6 +23,8 @@
 		0A281ADA2946A152004A8D88 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A281AD92946A152004A8D88 /* Onboarding.swift */; };
 		0A42147829493B2800B7B920 /* GoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42147729493B2800B7B920 /* GoalList.swift */; };
 		0A42147A29493B6C00B7B920 /* AssistantLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42147929493B6C00B7B920 /* AssistantLink.swift */; };
+		0A5C8431294EA1D20020481E /* BuyCredits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C8430294EA1D20020481E /* BuyCredits.swift */; };
+		0A5C8433294EA4CF0020481E /* ChatArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C8432294EA4CF0020481E /* ChatArt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		0A281AD92946A152004A8D88 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		0A42147729493B2800B7B920 /* GoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalList.swift; sourceTree = "<group>"; };
 		0A42147929493B6C00B7B920 /* AssistantLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantLink.swift; sourceTree = "<group>"; };
+		0A5C8430294EA1D20020481E /* BuyCredits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCredits.swift; sourceTree = "<group>"; };
+		0A5C8432294EA4CF0020481E /* ChatArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatArt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				0A42147B29493C5200B7B920 /* Main Items */,
 				0A281AD92946A152004A8D88 /* Onboarding.swift */,
 				0A281ACF29467734004A8D88 /* Assistant.swift */,
+				0A5C8430294EA1D20020481E /* BuyCredits.swift */,
+				0A5C8432294EA4CF0020481E /* ChatArt.swift */,
 				0A281AD329467784004A8D88 /* Buttons.swift */,
 				0A281AD5294677A1004A8D88 /* LoadingSymbol.swift */,
 				0A281AA72945EE6C004A8D88 /* Assets.xcassets */,
@@ -300,7 +306,9 @@
 				0A281AA62945EE69004A8D88 /* ContentView.swift in Sources */,
 				0A281ACE2945F30B004A8D88 /* ProgressBar.swift in Sources */,
 				0A281AD429467784004A8D88 /* Buttons.swift in Sources */,
+				0A5C8433294EA4CF0020481E /* ChatArt.swift in Sources */,
 				0A281AA42945EE69004A8D88 /* ResolutionaryApp.swift in Sources */,
+				0A5C8431294EA1D20020481E /* BuyCredits.swift in Sources */,
 				0A281AD229467760004A8D88 /* APIKey.swift in Sources */,
 				0A42147A29493B6C00B7B920 /* AssistantLink.swift in Sources */,
 			);

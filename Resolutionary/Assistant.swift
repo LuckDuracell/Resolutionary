@@ -28,8 +28,12 @@ struct Assistant: View {
     
     @State var pastPrompt = ""
     
+    
     @State var promptCopy = ""
     
+    
+    //Credits
+    @State var showPurchase: Bool = false
     @State var credits = UserDefaults.standard.integer(forKey: "credits")
     
     func sendRequest(redo: Bool) {
@@ -179,11 +183,14 @@ struct Assistant: View {
         .toolbar(content: {
             ToolbarItem(placement: .navigationBarTrailing, content: {
                 Button {
-                    
+                    showPurchase.toggle()
                 } label: {
                     Text("Credits: \(credits - 1)")
                 }
             })
+        })
+        .sheet(isPresented: $showPurchase, content: {
+            BuyCredits()
         })
     }
 }

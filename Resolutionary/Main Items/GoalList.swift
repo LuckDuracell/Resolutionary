@@ -27,6 +27,8 @@ struct GoalList: View {
     
     @FocusState var focused: Bool
     
+    
+    
     var body: some View {
         VStack {
             HStack {
